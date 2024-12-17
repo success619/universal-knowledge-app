@@ -8,6 +8,8 @@ import SignInScreen from "./app/screens/SignInScreen";
 import { useEffect, useState } from "react";
 import HomeScreen from "./app/screens/HomeScreen";
 import LoadingScreen from "./app/screens/LoadingScreen";
+import MenuDrawer from "./app/components/navigations/MenuDrawer";
+import AccountRightDrawer from "./app/components/navigations/AccountRightDrawer";
 
 const Stack = createNativeStackNavigator();
 
@@ -37,7 +39,7 @@ export default function App() {
           <>
             <Stack.Screen
               name="home"
-              component={HomeScreen}
+              component={AccountRightDrawer}
               options={hideHeader}
             />
           </>
